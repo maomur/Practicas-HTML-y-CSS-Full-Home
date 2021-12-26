@@ -1,0 +1,284 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+/* a:not([class]) {
+  text-decoration-skip-ink: auto;
+} */
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+    background-color:rgb(255, 255, 255) ;
+    font-family: 'Playfair Display', serif;
+    color: rgb(121, 121, 121);
+}
+
+.banner{
+    background: url("/assets/images/banner-background.jpg") bottom /cover no-repeat fixed;
+    height: 780px;
+    z-index: 1;
+    box-shadow: 10px 3px 20px black;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.479);
+    z-index: 3;
+    padding: 2em;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: 2em;
+    font-weight: 200;
+}
+
+.main-menu a{
+    padding: 1em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu a:hover{
+    color: #FF7F00;
+}
+
+.fa-shopping-basket{
+    color: white;
+    font-size: 1.5em;
+    border: 1px solid white;
+    padding: 0.2em;
+}
+
+.fa-shopping-basket:hover{
+    color: #FF7F00;
+    font-size: 1.5em;
+    border: 1px solid white;
+    padding: 0.2em;
+}
+
+.slogans{
+    position: relative;
+    top: 200px;
+}
+
+.slogan{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    top: 200px;
+}
+
+.sub-slogan{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.button{
+    color: white;
+    background-color: #FF7F00;
+    border: none;
+    padding: 0.5em 2em;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #cc6600;
+}
+
+.title-services{
+    text-align: center;
+    color: black;
+    margin: 3em 1em 0.2em 1em;
+    font-size: 2em;
+}
+
+.fa-utensils{
+    color: #FF7F00;
+    display: block;
+    font-size: 2em;
+    text-align: center;
+}
+
+.subtitle-services{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5em 2em 2.5em 2em;
+}
+
+.servicios{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.servicio{
+    width: 300px;
+    padding-top: 3em;
+}
+
+.servicio img{
+    width: 100%;
+}
+
+.servicio h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    padding: 1em;
+}
+
+.servicio p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.button-more p{
+    display: block;
+    margin: 0 auto;
+    padding: 0.2em 1.5em;
+    color: #FF7F00;
+    width: 40%;
+    font-size: 1em;
+    border: 2px solid #FF7F00;
+}
+
+.button-more p:hover{
+    background-color: black;
+    color: #ffffff;
+    border-color: black;
+}
+
+.button-more{
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 900px){
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.footer{
+    background-color: black;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+@media (max-width: 680px){
+    
+    .banner{
+        height: 1000px;
+    }
+    .main-menu{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1em;
+        padding: 1em;
+        background: black;
+        border: none;
+    }
+
+    .main-menu a{
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+        margin-left: 0;
+    }
+
+    .slogans{
+        position: relative;
+        top: 40px;
+        padding: 2em;
+    }
+}
