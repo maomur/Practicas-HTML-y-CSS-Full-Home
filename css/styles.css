@@ -170,7 +170,7 @@ body{
 .title-services{
     text-align: center;
     color: black;
-    margin: 3em 1em 0.2em 1em;
+    margin: 3em 0em 0.2em 0em;
     font-size: 2em;
 }
 
@@ -183,7 +183,7 @@ body{
 
 .subtitle-services{
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding: 0.5em 2em 2.5em 2em;
 }
@@ -239,6 +239,135 @@ body{
     text-decoration: none;
 }
 
+.quality{
+    background: url("/assets/images/background-quality.jpg") bottom /cover no-repeat fixed;
+    height: 400px;
+    margin-top: 4em;
+    padding: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+}
+
+.quality-left{
+    width: 800px;
+    color: white;
+}
+
+.title-quality{
+    color: white;
+    font-size: 2.5em;
+}
+
+
+.quality li{
+    color: white;
+}
+
+.quality-right i{
+   text-align: right; 
+}
+
+.fa-pepper-hot{
+    font-size: 10em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gallery img{
+    height: auto;
+}
+
+.testimonials{
+    background-color: rgb(231, 231, 231);
+    margin: 5em 0 5em 0;
+    padding: 3em 3em 8em 3em;
+}
+
+.testimonials-container{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5em;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+.testimonial{
+    width: 240px;
+}
+
+.testimonial img{
+    display: flex;
+    margin: 0 auto;
+}
+
+.testimonial [for="file"]{
+    font-size: 1.3em;
+    color: black;
+}
+
+.testimonial blockquote{
+    font-size: 0.9em;
+}
+
+.submit{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 4em;
+    padding: 0 20% 0 20%;
+}
+
+.submit [type=email]{
+    padding: 0.9em;
+}
+
+.submit [type=submit]{
+    background-color: #FF7F00;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+}
+
+.left-submit h3{
+    color: black;
+    font-size: 1.8em;
+    padding: 0.5em;
+}
+
+.pre-footer{
+    background-color: #FF7F00;
+    height: 10px;
+    margin-top: 3em;
+}
+.footer{
+    background-color: black;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer__colum-1 h3{
+    color: rgb(255, 255, 255);
+}
+
+.footer__column-2 h3{
+    color: rgb(255, 255, 255);
+}
 
 /* Media Queries */
 
@@ -249,11 +378,6 @@ body{
     }
 }
 
-.footer{
-    background-color: black;
-    padding: 2em;
-    margin-top: 3em;
-}
 
 @media (max-width: 680px){
     
@@ -281,4 +405,25 @@ body{
         top: 40px;
         padding: 2em;
     }
+
+    .quality{
+        margin-top: 4em;
+        padding: 2em;
+    }
+
+    .title-quality{
+        color: white;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .submit [type=email]{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    
+    .submit [type=submit]{
+        width: 100%;
+    }
+
 }
