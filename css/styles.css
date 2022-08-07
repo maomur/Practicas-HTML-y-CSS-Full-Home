@@ -80,7 +80,7 @@ body{
 }
 
 .banner{
-    background: url("/css/assets/images/banner-background.jpg") bottom /cover no-repeat fixed;
+    background: url("./assets/images/banner-background.jpg") bottom /cover no-repeat fixed;
     height: 780px;
     z-index: 1;
     box-shadow: 10px 3px 20px black;
